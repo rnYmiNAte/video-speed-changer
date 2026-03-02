@@ -1,0 +1,14 @@
+[project]
+name = "video-speed-changer"
+version = "0.3.0"
+description = "Change video speed, tempo & pitch independently using FFmpeg"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "ffmpeg-python >= 0.2.0",
+    "tqdm",
+    "pydub",           # optional – nicer audio handling
+]
+
+[project.scripts]
+vid-speed = "src.cli:main"
